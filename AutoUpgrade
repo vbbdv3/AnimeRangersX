@@ -58,7 +58,7 @@ wait(1)
         end
 end)
 
-btns:Button("Beru + Zenitsu", function()
+btns:Button("Beru + Zenitsu (OP)", function()
 _G.BeruZenitsu_enabled = not _G.BeruZenitsu_enabled
 while _G.BeruZenitsu_enabled do
 local args = {
