@@ -58,6 +58,23 @@ wait(1)
         end
 end)
 
+btns:Button("Beru + Zenitsu", function()
+_G.BeruZenitsu_enabled = not _G.BeruZenitsu_enabled
+while _G.BeruZenitsu_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Beru
+}
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+wait(1)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Zenitsu
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+wait(1)
+        end
+end)
+
 
 btns:Button("VoteRetry", function()
 _G.VoteRetry_enabled = not _G.VoteRetry_enabled
