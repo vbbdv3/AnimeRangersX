@@ -110,15 +110,27 @@ btns:Button("AntiAFK", function()
 loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/vbbdv3/AntiAFK/refs/heads/main/Raw'))()
 end)
 
-btns:Button("Collection", function()
+btns:Button("CollectionGui", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Collection.Enabled = true
 end)
 
-btns:Button("Items", function()
+btns:Button("ItemsGui", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Items.Enabled = true
 end)
 
-btns:Button("BossEvent", function()
+btns:Button("UnitsEvolveGui", function()
+game:GetService("Players").LocalPlayer.PlayerGui.UnitsEvolve.Enabled = true
+end)
+
+btns:Button("UnitsGachaGui", function()
+game:GetService("Players").LocalPlayer.PlayerGui.UnitsGacha.Enabled = true
+end)
+
+btns:Button("CraftingGui", function()
+game:GetService("Players").LocalPlayer.PlayerGui.Crafting.Enabled = true
+end)
+
+btns:Button("BossEventGui", function()
 
 game:GetService("Players").LocalPlayer.PlayerGui.BossEvent.Enabled = true
 end)
