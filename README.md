@@ -1,1 +1,59 @@
-# AnimeRangersX
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("discord library")
+
+local serv = win:Server("Anime Rangers X", "")
+
+local btns = serv:Channel("Buttons")
+
+btns:Button("Beru", function()
+_G.Beru_enabled = not _G.Beru_enabled
+while _G.Beru_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Beru
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+
+wait(1)
+        end
+end)
+
+btns:Button("Zenitsu", function()
+_G.Zenitsu_enabled = not _G.Zenitsu_enabled
+while _G.Zenitsu_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Zenitsu
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+
+wait(1)
+        end
+end)
+
+btns:Button("Katakuri", function()
+_G.Katakuri_enabled = not _G.Katakuri_enabled
+while _G.Katakuri_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Katakuri
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+
+wait(1)
+        end
+end)
+
+btns:Button("Sukuna", function()
+_G.Sukuna_enabled = not _G.Sukuna_enabled
+while _G.Sukuna_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Sukuna
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+
+wait(1)
+        end
+end)
