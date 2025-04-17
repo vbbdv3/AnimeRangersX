@@ -110,6 +110,10 @@ btns:Button("AntiAFK", function()
 loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/vbbdv3/AntiAFK/refs/heads/main/Raw'))()
 end)
 
+btns:Button("AutoClisk", function()
+loadstring(game:HttpGetAsync('https://pastebin.com/raw/WgkcDYUs'))()
+end)
+
 btns:Button("CollectionGui", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Collection.Enabled = true
 end)
