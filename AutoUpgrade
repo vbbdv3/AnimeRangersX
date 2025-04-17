@@ -94,3 +94,9 @@ btns:Button("Collection", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Collection.Enabled = true
 end)
 
+btns:Button("BossEvent", function()
+
+game:GetService("Players").LocalPlayer.PlayerGui.BossEvent.Enabled = true
+end)
+
+
