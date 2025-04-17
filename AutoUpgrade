@@ -58,16 +58,16 @@ wait(1)
         end
 end)
 
-btns:Button("Beru + Songjinwuu", function()
-_G.Songjinwuu_enabled = not _G.Songjinwuu_enabled
-while _G.Songjinwuu_enabled do
+btns:Button("Beru + Zenitsu", function()
+_G.BeruZenitsu_enabled = not _G.BeruZenitsu_enabled
+while _G.BeruZenitsu_enabled do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Beru
 }
 game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
 wait(1)
 local args = {
-    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Songjinwuu
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Zenitsu
 }
 game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
 wait(1)
