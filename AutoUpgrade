@@ -14,9 +14,7 @@ while _G.Beru_enabled do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Beru
 }
-
 game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
-
 wait(1)
         end
 end)
@@ -66,10 +64,16 @@ _G.VoteRetry_enabled = not _G.VoteRetry_enabled
 while _G.VoteRetry_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteRetry:FireServer()
 wait(1)
+game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = false
+wait(1)
         end
 end)
 
 btns:Button("AntiAFK", function()
 loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/vbbdv3/AntiAFK/refs/heads/main/Raw'))()
+end)
+
+btns:Button("Collection", function()
+game:GetService("Players").LocalPlayer.PlayerGui.Collection.Enabled = true
 end)
 
