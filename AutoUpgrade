@@ -19,45 +19,6 @@ wait(1)
         end
 end)
 
-btns:Button("Zenitsu", function()
-_G.Zenitsu_enabled = not _G.Zenitsu_enabled
-while _G.Zenitsu_enabled do
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Zenitsu
-}
-
-game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
-
-wait(1)
-        end
-end)
-
-btns:Button("Katakuri", function()
-_G.Katakuri_enabled = not _G.Katakuri_enabled
-while _G.Katakuri_enabled do
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Katakuri
-}
-
-game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
-
-wait(1)
-        end
-end)
-
-btns:Button("Sukuna", function()
-_G.Sukuna_enabled = not _G.Sukuna_enabled
-while _G.Sukuna_enabled do
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Sukuna
-}
-
-game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
-
-wait(1)
-        end
-end)
-
 btns:Button("Beru + Zenitsu (OP)", function()
 _G.BeruZenitsu_enabled = not _G.BeruZenitsu_enabled
 while _G.BeruZenitsu_enabled do
@@ -110,6 +71,11 @@ btns:Button("AntiAFK", function()
 loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/vbbdv3/AntiAFK/refs/heads/main/Raw'))()
 end)
 
+btns:Button("BossEventGui", function()
+
+game:GetService("Players").LocalPlayer.PlayerGui.BossEvent.Enabled = true
+end)
+
 btns:Button("AutoClisk", function()
 loadstring(game:HttpGetAsync('https://pastebin.com/raw/WgkcDYUs'))()
 end)
@@ -134,9 +100,44 @@ btns:Button("CraftingGui", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Crafting.Enabled = true
 end)
 
-btns:Button("BossEventGui", function()
 
-game:GetService("Players").LocalPlayer.PlayerGui.BossEvent.Enabled = true
+btns:Button("Zenitsu", function()
+_G.Zenitsu_enabled = not _G.Zenitsu_enabled
+while _G.Zenitsu_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Zenitsu
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+
+wait(1)
+        end
+end)
+
+btns:Button("Katakuri", function()
+_G.Katakuri_enabled = not _G.Katakuri_enabled
+while _G.Katakuri_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Katakuri
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+
+wait(1)
+        end
+end)
+
+btns:Button("Sukuna", function()
+_G.Sukuna_enabled = not _G.Sukuna_enabled
+while _G.Sukuna_enabled do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Sukuna
+}
+
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+
+wait(1)
+        end
 end)
 
 
