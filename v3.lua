@@ -54,10 +54,8 @@ end)
 win:Tab("MAIN", "http://www.roblox.com/asset/?id=6022668888")
 
 tab:Button("VoteRetry", "VoteRetry", function()
-Flux:Notification("VoteRetry", "Alright")
-wait(1)
-_G.VoteRetry_enabled = not _G.VoteRetry_enabled
-while _G.VoteRetry_enabled do
+_G.Vote_enabled = not _G.Vote_enabled
+while _G.Vote_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteRetry:FireServer()
 wait(1)
 game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = false
@@ -66,10 +64,8 @@ wait(1)
 end)
 
 tab:Button("VoteNext", "VoteNext", function()
-Flux:Notification("VoteNext", "Alright")
-wait(1)
-_G.VoteNext_enabled = not _G.VoteNext_enabled
-while _G.VoteNext_enabled do
+_G.Vote_enabled = not _G.Vote_enabled
+while _G.Vote_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteNext:FireServer()
 wait(1)
 game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = false
