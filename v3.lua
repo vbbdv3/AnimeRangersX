@@ -49,6 +49,10 @@ tab:Button("VoteRetry", "VoteRetry", function()
 _G.VoteRetry_enabled = not _G.VoteRetry_enabled
 while _G.VoteRetry_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteRetry:FireServer()
+wait(5)
+game:GetService("Players").LocalPlayer.PlayerGui.GameEndedAnimationUI:Destroy()
+wait(1)
+game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = false
 wait(1)
         end
 end)
@@ -57,9 +61,18 @@ tab:Button("VoteNext", "VoteNext", function()
 _G.VoteNext_enabled = not _G.VoteNext_enabled
 while _G.VoteNext_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteNext:FireServer()
+wait(5)
+game:GetService("Players").LocalPlayer.PlayerGui.GameEndedAnimationUI:Destroy()
+wait(1)
+game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = false
 wait(1)
         end
 end)
+
+tab:Button("AntiAFK", "AntiAFK", function()
+game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = true
+end)
+
 tab:Button("AntiAFK", "AntiAFK", function()
 loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/vbbdv3/AntiAFK/refs/heads/main/Raw'))()
 end)
