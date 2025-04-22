@@ -69,7 +69,7 @@ wait(1)
         end
 end)
 
-tab:Button("AntiAFK", "AntiAFK", function()
+tab:Button("RewardsUI", "RewardsUI", function()
 game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = true
 end)
 
