@@ -59,7 +59,7 @@ wait(1)
         end
 end)
 
-btns:Button("VoteRetry", function()
+btns:Button("VoteNext", function()
 _G.VoteNext_enabled = not _G.VoteNext_enabled
 while _G.VoteNext_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteNext:FireServer()
