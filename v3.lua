@@ -60,8 +60,6 @@ _G.VoteRetry_enabled = not _G.VoteRetry_enabled
 while _G.VoteRetry_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteRetry:FireServer()
 wait(5)
-game:GetService("Players").LocalPlayer.PlayerGui.GameEndedAnimationUI:Destroy()
-wait(1)
 game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = false
 wait(1)
         end
@@ -74,8 +72,6 @@ _G.VoteNext_enabled = not _G.VoteNext_enabled
 while _G.VoteNext_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteNext:FireServer()
 wait(5)
-game:GetService("Players").LocalPlayer.PlayerGui.GameEndedAnimationUI:Destroy()
-wait(1)
 game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = false
 wait(1)
         end
