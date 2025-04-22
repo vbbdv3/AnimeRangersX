@@ -1,6 +1,6 @@
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
 
-local win = Flux:Window("PREVIEW", "Baseplate", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
+local win = Flux:Window("Anime Rangers X", "Baseplate", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
 local tab = win:Tab("Auto Upgrade", "http://www.roblox.com/asset/?id=6023426915")
 
 tab:Button("Songjinwuu", "Songjinwuu", function()
@@ -51,7 +51,7 @@ wait(1)
         end
 end)
 
-win:Tab("MAIN", "http://www.roblox.com/asset/?id=6022668888")
+local tab = win:Tab("MAIN", "http://www.roblox.com/asset/?id=6022668888")
 
 tab:Button("VoteRetry", "VoteRetry", function()
 _G.Vote_enabled = not _G.Vote_enabled
@@ -90,7 +90,7 @@ loadstring(game:HttpGetAsync('https://pastebin.com/raw/WgkcDYUs'))()
 end)
 
 
-win:Tab("GUI", "http://www.roblox.com/asset/?id=6022668888")
+local tab = win:Tab("GUI", "http://www.roblox.com/asset/?id=6022668888")
 
 tab:Button("BossEvent", "BossEvent", function()
 game:GetService("Players").LocalPlayer.PlayerGui.BossEvent.Enabled = true
