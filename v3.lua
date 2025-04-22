@@ -4,6 +4,8 @@ local win = Flux:Window("PREVIEW", "Baseplate", Color3.fromRGB(255, 110, 48), En
 local tab = win:Tab("Auto Upgrade", "http://www.roblox.com/asset/?id=6023426915")
 
 tab:Button("Songjinwuu", "Songjinwuu", function()
+Flux:Notification("Songjinwuu", "Alright")
+wait(1)
 while true do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Songjinwuu
@@ -14,6 +16,8 @@ wait(1)
 end)
 
 tab:Button("Beru", "Beru ", function()
+Flux:Notification("Beru", "Alright")
+wait(1)
 while true do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Beru
@@ -24,6 +28,8 @@ wait(1)
 end)
 
 tab:Button("Ace", "Ace", function()
+Flux:Notification("Ace", "Alright")
+wait(1)
 while true do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Ace
@@ -34,6 +40,8 @@ wait(1)
 end)
 
 tab:Button("Gojo", "Gojo", function()
+Flux:Notification("Gojo", "Alright")
+wait(1)
 while true do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Gojo
@@ -46,6 +54,8 @@ end)
 win:Tab("MAIN", "http://www.roblox.com/asset/?id=6022668888")
 
 tab:Button("VoteRetry", "VoteRetry", function()
+Flux:Notification("VoteRetry", "Alright")
+wait(1)
 _G.VoteRetry_enabled = not _G.VoteRetry_enabled
 while _G.VoteRetry_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteRetry:FireServer()
@@ -58,6 +68,8 @@ wait(1)
 end)
 
 tab:Button("VoteNext", "VoteNext", function()
+Flux:Notification("VoteNext", "Alright")
+wait(1)
 _G.VoteNext_enabled = not _G.VoteNext_enabled
 while _G.VoteNext_enabled do
 game:GetService("ReplicatedStorage").Remote.Server.OnGame.Voting.VoteNext:FireServer()
