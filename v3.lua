@@ -73,14 +73,6 @@ wait(1)
         end
 end)
 
-tab:Button("GameEndedAnimationUI", "GameEndedAnimationUI", function()
-_G.GameEndedAnimationUI_enabled = not _G.GameEndedAnimationUI_enabled
-while _G.GameEndedAnimationUI_enabled do
-game:GetService("Players").LocalPlayer.PlayerGui.GameEndedAnimationUI:Destroy()
- wait(1)
-        end
-end)
-
 tab:Button("RewardsUI True", "RewardsUI", function()
 game:GetService("Players").LocalPlayer.PlayerGui.RewardsUI.Enabled = true
 end)
