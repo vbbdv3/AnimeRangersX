@@ -9,10 +9,10 @@ local serv = win:Server("Anime Rangers X", "")
 local btns = serv:Channel("Buttons")
 
 btns:Button("Beru", function()
-_G.Beru_enabled = not _G.Beru_enabled
-while _G.Beru_enabled do
+_G.Broly_enabled = not _G.Broly_enabled
+while _G.Broly_enabled do
 local args = {
-    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Beru
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Broly
 }
 game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
 wait(1)
