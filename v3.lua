@@ -1,6 +1,6 @@
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
 
-local win = Flux:Window("Anime Rangers X", "Baseplate", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
+local win = Flux:Window("AnimeRangersX", "Жопа с ручками", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
 local tab = win:Tab("Auto Upgrade", "http://www.roblox.com/asset/?id=6023426915")
 
 tab:Button("Songjinwuu", "Songjinwuu", function()
@@ -33,6 +33,18 @@ wait(1)
 while true do
 local args = {
     [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Ace
+}
+game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
+wait(1)
+        end
+end)
+
+tab:Button("Madara", "Madara", function()
+Flux:Notification("Madara", "Alright")
+wait(1)
+while true do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.UnitsFolder.Madara
 }
 game:GetService("ReplicatedStorage").Remote.Server.Units.Upgrade:FireServer(unpack(args))
 wait(1)
