@@ -1,3 +1,5 @@
+-- loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
+
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
 
 local win = Flux:Window("AnimeRangersX", "Жопа с ручками", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
