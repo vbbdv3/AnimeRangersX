@@ -118,6 +118,23 @@ tab:Button("Items", "Items", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Items.Enabled = true
 end)
 
+
+tab:Button("ApplyCurse", "ApplyCurse", function()
+game:GetService("Players").LocalPlayer.PlayerGui.ApplyCurse.Enabled = true
+end)
+
+tab:Button("StatsPotential", "StatsPotential", function()
+game:GetService("Players").LocalPlayer.PlayerGui.StatsPotential.Enabled = true
+end)
+
+tab:Button("Traits", "Traits", function()
+game:GetService("Players").LocalPlayer.PlayerGui.Traits.Enabled = true
+end)
+
+tab:Button("Merchant", "Merchant", function()
+game:GetService("Players").LocalPlayer.PlayerGui.Merchant.Enabled = true
+end)
+
 tab:Button("UnitsEvolve", "UnitsEvolve", function()
 game:GetService("Players").LocalPlayer.PlayerGui.UnitsEvolve.Enabled = true
 end)
