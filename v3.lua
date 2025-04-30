@@ -126,6 +126,10 @@ tab:Button("Quest", "Quest", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Quest.Enabled = true
 end)
 
+tab:Button("EvolveTier", "EvolveTier", function()
+game:GetService("Players").LocalPlayer.PlayerGui.EvolveTier.Enabled = true
+end)
+
 tab:Button("Items", "Items", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Items.Enabled = true
 end)
