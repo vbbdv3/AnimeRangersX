@@ -114,6 +114,18 @@ tab:Button("Collection", "Collection", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Collection.Enabled = true
 end)
 
+tab:Button("LevelMilestone", "LevelMilestone", function()
+game:GetService("Players").LocalPlayer.PlayerGui.LevelMilestone.Enabled = true
+end)
+
+tab:Button("PlayerStats", "PlayerStats", function()
+game:GetService("Players").LocalPlayer.PlayerGui.PlayerStats.Enabled = true
+end)
+
+tab:Button("Quest", "Quest", function()
+game:GetService("Players").LocalPlayer.PlayerGui.Quest.Enabled = true
+end)
+
 tab:Button("Items", "Items", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Items.Enabled = true
 end)
